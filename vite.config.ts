@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/restaurant-01/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -15,6 +16,10 @@ export default defineConfig(() => {
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),
+          about: path.resolve(__dirname, 'about.html'),
+          menu: path.resolve(__dirname, 'menu.html'),
+          gallery: path.resolve(__dirname, 'gallery.html'),
+          contact: path.resolve(__dirname, 'contact.html'),
           restaurant_index: path.resolve(__dirname, 'templates/restaurant/restaurant-01/index.html'),
           restaurant_about: path.resolve(__dirname, 'templates/restaurant/restaurant-01/about.html'),
           restaurant_menu: path.resolve(__dirname, 'templates/restaurant/restaurant-01/menu.html'),
