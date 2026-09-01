@@ -1,0 +1,6 @@
+{
+  "name": "SAVORA — Modern Kitchen & Dining",
+  "description": "A premium, production-ready commercial restaurant website template featuring an editorial aesthetic, interactive menu filtering, responsive gallery with lightbox, and table reservation system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

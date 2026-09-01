@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — SAVORA Modern Kitchen & Dining</title>
+  <meta name="description" content="Visual moments from SAVORA — signature dishes, dining room ambience, kitchen craft, cocktails, and private event celebrations.">
+  <link rel="canonical" href="./gallery.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gallery — SAVORA Modern Kitchen & Dining">
+  <meta property="og:description" content="Explore dining atmospheres, culinary craft, and aesthetic spaces at SAVORA.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:url" content="./gallery.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="./index.html" class="brand-logo" aria-label="SAVORA Homepage">
+        <span class="brand-name" data-config-text="businessName">SAVORA</span>
+        <span class="brand-sub" data-config-text="subtitle">Modern Kitchen &amp; Dining</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./menu.html" class="nav-link">Menu</a>
+        <a href="./gallery.html" class="nav-link active" aria-current="page">Gallery</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary js-open-reservation" aria-haspopup="dialog" aria-controls="reservationModal">
+          Reserve a Table
+        </button>
+        <button type="button" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./menu.html">Menu</a>
+      <a href="./gallery.html" class="active">Gallery</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <button type="button" class="btn btn-primary js-open-reservation" style="width: 100%;">
+        Reserve a Table
+      </button>
+      <a href="#" class="btn btn-whatsapp" data-config-whatsapp style="width: 100%;">
+        WhatsApp Us
+      </a>
+      <p style="font-size: 0.875rem; color: var(--color-text-secondary); text-align: center; margin-top: 0.5rem;" data-config-text="phone">
+        +91 98765 43210
+      </p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- PAGE HERO -->
+    <section class="page-header" aria-label="Gallery Header">
+      <div class="container page-header-content">
+        <span class="section-eyebrow">VISUAL JOURNAL</span>
+        <h1 class="heading-primary">Moments at SAVORA</h1>
+        <p>A curated look at our spaces, kitchen artistry, curated drinks, and ambient evenings.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="section-padding" aria-label="Visual Gallery">
+      <div class="container">
+        <!-- Gallery Filter Tabs -->
+        <div class="filter-nav" role="tablist" aria-label="Gallery Category Filters">
+          <button type="button" class="filter-btn active" data-gallery-filter="all" role="tab" aria-selected="true">All</button>
+          <button type="button" class="filter-btn" data-gallery-filter="food" role="tab" aria-selected="false">Food</button>
+          <button type="button" class="filter-btn" data-gallery-filter="interior" role="tab" aria-selected="false">Interior</button>
+          <button type="button" class="filter-btn" data-gallery-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+          <button type="button" class="filter-btn" data-gallery-filter="events" role="tab" aria-selected="false">Events</button>
+        </div>
+
+        <!-- Editorial Gallery Grid (10 items) -->
+        <div class="gallery-grid" id="galleryGrid">
+          
+          <!-- Item 1: Interior -->
+          <div class="gallery-item wide" data-category="interior" data-title="Main Dining Hall & Ambient Lighting" tabindex="0" role="button" aria-label="View Main Dining Hall image in lightbox">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Main Dining Room with warm lights and custom wood tables" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Main Dining Room</h3>
+              <span class="gallery-cat">Interior</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Food -->
+          <div class="gallery-item" data-category="food" data-title="Charred Burrata & Sourdough" tabindex="0" role="button" aria-label="View Charred Burrata image in lightbox">
+            <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb2250d?auto=format&fit=crop&w=800&q=80" alt="Plated Charred Burrata with roasted tomatoes" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Charred Burrata</h3>
+              <span class="gallery-cat">Food</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Drinks -->
+          <div class="gallery-item tall" data-category="drinks" data-title="Botanical Hibiscus Mocktail" tabindex="0" role="button" aria-label="View Botanical Hibiscus Mocktail image in lightbox">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Artisan cocktail glass with fresh botanical garnish" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Botanical Cooler</h3>
+              <span class="gallery-cat">Drinks</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Food -->
+          <div class="gallery-item" data-category="food" data-title="Handmade Truffle Fettuccine" tabindex="0" role="button" aria-label="View Truffle Fettuccine in lightbox">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Creamy wild mushroom fettuccine with parmesan" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Truffle Mushroom Pasta</h3>
+              <span class="gallery-cat">Food</span>
+            </div>
+          </div>
+
+          <!-- Item 5: Interior / Table -->
+          <div class="gallery-item" data-category="interior" data-title="Candlelit Dining Setting" tabindex="0" role="button" aria-label="View Evening Dining Table in lightbox">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="Evening candle table setting with crystal glassware" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Evening Ambiance</h3>
+              <span class="gallery-cat">Interior</span>
+            </div>
+          </div>
+
+          <!-- Item 6: Events -->
+          <div class="gallery-item wide" data-category="events" data-title="Private Gathering & Celebration Table" tabindex="0" role="button" aria-label="View Private Dining Setup in lightbox">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80" alt="Long dining table arranged for group dinner" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Celebration Table</h3>
+              <span class="gallery-cat">Events</span>
+            </div>
+          </div>
+
+          <!-- Item 7: Food / Dessert -->
+          <div class="gallery-item" data-category="food" data-title="Saffron Panna Cotta with Pistachio" tabindex="0" role="button" aria-label="View Saffron Panna Cotta in lightbox">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80" alt="Plated panna cotta dessert with berry compote" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Saffron Panna Cotta</h3>
+              <span class="gallery-cat">Food</span>
+            </div>
+          </div>
+
+          <!-- Item 8: Events -->
+          <div class="gallery-item tall" data-category="events" data-title="Wine & Tasting Flight Setup" tabindex="0" role="button" aria-label="View Tasting Flight in lightbox">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Wine tasting setup in private dining alcove" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Tasting Evenings</h3>
+              <span class="gallery-cat">Events</span>
+            </div>
+          </div>
+
+          <!-- Item 9: Food -->
+          <div class="gallery-item" data-category="food" data-title="Charred Tandoori Salmon" tabindex="0" role="button" aria-label="View Tandoori Salmon in lightbox">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" alt="Crispy glazed salmon with market vegetables" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Tandoori Salmon</h3>
+              <span class="gallery-cat">Food</span>
+            </div>
+          </div>
+
+          <!-- Item 10: Drinks -->
+          <div class="gallery-item" data-category="drinks" data-title="Barista Single-Origin Cold Brew" tabindex="0" role="button" aria-label="View Cold Coffee in lightbox">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" alt="Iced cold brew coffee with fresh foam" loading="lazy">
+            <div class="gallery-overlay">
+              <h3 class="gallery-title">Single-Origin Coffee</h3>
+              <span class="gallery-cat">Drinks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: RESERVATION CTA -->
+    <section class="section-padding" style="background-color: var(--color-bg-alt);" aria-label="Reserve a Table">
+      <div class="container">
+        <div class="reservation-banner">
+          <span class="section-eyebrow light">BE OUR GUEST</span>
+          <h2 class="heading-primary">Experience the atmosphere in person.</h2>
+          <p>We welcome you for relaxed lunches, celebratory dinners and family reunions.</p>
+          <div class="reservation-btn-group">
+            <button type="button" class="btn btn-primary js-open-reservation" aria-haspopup="dialog">
+              Reserve a Table
+            </button>
+            <a href="#" class="btn btn-whatsapp" data-config-whatsapp>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox Viewer" aria-hidden="true">
+    <div class="lightbox-container">
+      <button type="button" class="lightbox-close-btn" aria-label="Close Lightbox Viewer">&times;</button>
+      
+      <button type="button" class="lightbox-btn lightbox-btn-prev" aria-label="Previous Image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+
+      <div class="lightbox-image-wrapper">
+        <img class="lightbox-image" src="" alt="SAVORA Gallery View">
+      </div>
+
+      <button type="button" class="lightbox-btn lightbox-btn-next" aria-label="Next Image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+
+      <div class="lightbox-caption-bar">
+        <span class="lightbox-title">Image Title</span>
+        <span class="lightbox-counter">1 of 10</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <p class="brand-name" data-config-text="businessName">SAVORA</p>
+          <p class="brand-sub" data-config-text="subtitle">Modern Kitchen &amp; Dining</p>
+          <p class="tagline" data-config-text="tagline">Good Food. Beautifully Served.</p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" data-config-social="instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" data-config-social="facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" data-config-social="youtube" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="./menu.html">Full Menu</a></li>
+            <li><a href="#" class="js-open-reservation">Reservations</a></li>
+            <li><a href="./about.html#private-dining">Private Dining</a></li>
+            <li><a href="./about.html#events">Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Visit &amp; Hours</p>
+          <div class="footer-contact-info">
+            <p data-config-text="address">18 Heritage Lane</p>
+            <p data-config-text="city">New Delhi, India</p>
+            <p><a href="tel:+919876543210" data-config-phone="sync">+91 98765 43210</a></p>
+            <p><a href="mailto:hello@savora.example" data-config-email="sync">hello@savora.example</a></p>
+            <div style="margin-top: 0.5rem; font-size: 0.8125rem;">
+              <p><strong>Mon–Thu:</strong> 12:00 PM – 10:30 PM</p>
+              <p><strong>Fri–Sat:</strong> 12:00 PM – 11:30 PM</p>
+              <p><strong>Sunday:</strong> 12:00 PM – 10:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-current-year>2026</span> <span data-config-text="businessName">SAVORA</span>. All Rights Reserved.</p>
+        <p style="font-size: 0.8125rem; opacity: 0.7;">Modern Kitchen &amp; Dining Commercial Template</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESERVATION MODAL -->
+  <div class="modal-backdrop" id="reservationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" aria-label="Close reservation modal">&times;</button>
+      <div class="modal-header">
+        <span class="section-eyebrow">TABLE RESERVATION</span>
+        <h3 id="modalTitle">Request a Table</h3>
+        <p>Please select your preferred date, time and guest count.</p>
+      </div>
+
+      <div id="reservationFeedback" class="form-feedback-alert" role="status" aria-live="polite"></div>
+
+      <form id="reservationForm" novalidate>
+        <div class="form-group">
+          <label for="resName" class="form-label">Full Name <span class="req">*</span></label>
+          <input type="text" id="resName" class="form-control" placeholder="e.g. Aarav Sharma" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resPhone" class="form-label">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="resPhone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label for="resEmail" class="form-label">Email Address <span class="req">*</span></label>
+            <input type="email" id="resEmail" class="form-control" placeholder="aarav@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resDate" class="form-label">Date <span class="req">*</span></label>
+            <input type="date" id="resDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="resTime" class="form-label">Time <span class="req">*</span></label>
+            <select id="resTime" class="form-control" required>
+              <option value="" disabled selected>Select time slot</option>
+              <option value="12:00 PM">12:00 PM (Lunch)</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="01:00 PM">01:00 PM</option>
+              <option value="01:30 PM">01:30 PM</option>
+              <option value="02:00 PM">02:00 PM</option>
+              <option value="07:00 PM">07:00 PM (Dinner)</option>
+              <option value="07:30 PM">07:30 PM</option>
+              <option value="08:00 PM">08:00 PM</option>
+              <option value="08:30 PM">08:30 PM</option>
+              <option value="09:00 PM">09:00 PM</option>
+              <option value="09:30 PM">09:30 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="resGuests" class="form-label">Number of Guests <span class="req">*</span></label>
+          <select id="resGuests" class="form-control" required>
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="7">7 Guests</option>
+            <option value="8+">8+ Guests (Private dining enquiry)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="resSpecial" class="form-label">Special Requests (Optional)</label>
+          <textarea id="resSpecial" class="form-control" rows="2" placeholder="Dietary preferences, seating preference, celebration notes..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+          Submit Reservation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/config.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

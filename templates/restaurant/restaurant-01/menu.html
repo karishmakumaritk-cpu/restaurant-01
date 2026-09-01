@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — SAVORA Modern Kitchen & Dining</title>
+  <meta name="description" content="Explore our seasonal menu featuring artisanal starters, handmade pastas, charcoal mains, handcrafted desserts, and signature botanical drinks.">
+  <link rel="canonical" href="./menu.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Menu — SAVORA Modern Kitchen & Dining">
+  <meta property="og:description" content="Thoughtful dishes crafted with seasonal inspiration and fresh ingredients.">
+  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:url" content="./menu.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="./index.html" class="brand-logo" aria-label="SAVORA Homepage">
+        <span class="brand-name" data-config-text="businessName">SAVORA</span>
+        <span class="brand-sub" data-config-text="subtitle">Modern Kitchen &amp; Dining</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./menu.html" class="nav-link active" aria-current="page">Menu</a>
+        <a href="./gallery.html" class="nav-link">Gallery</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary js-open-reservation" aria-haspopup="dialog" aria-controls="reservationModal">
+          Reserve a Table
+        </button>
+        <button type="button" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./menu.html" class="active">Menu</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <button type="button" class="btn btn-primary js-open-reservation" style="width: 100%;">
+        Reserve a Table
+      </button>
+      <a href="#" class="btn btn-whatsapp" data-config-whatsapp style="width: 100%;">
+        WhatsApp Us
+      </a>
+      <p style="font-size: 0.875rem; color: var(--color-text-secondary); text-align: center; margin-top: 0.5rem;" data-config-text="phone">
+        +91 98765 43210
+      </p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- PAGE HERO -->
+    <section class="page-header" aria-label="Menu Header">
+      <div class="container page-header-content">
+        <span class="section-eyebrow">SAVORA DINING</span>
+        <h1 class="heading-primary">Our Complete Menu</h1>
+        <p>A celebration of mindful cooking, seasonal ingredients, and nuanced flavor harmony.</p>
+        <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+          <em>*Demo menu items and indicative pricing for preview purposes. Government taxes applicable.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="section-padding" aria-label="Menu Selections">
+      <div class="container">
+        <!-- Filter Controls -->
+        <div class="filter-nav" role="tablist" aria-label="Menu Filter Tabs">
+          <button type="button" class="filter-btn active" data-menu-filter="all" role="tab" aria-selected="true">All Items</button>
+          <button type="button" class="filter-btn" data-menu-filter="starters" role="tab" aria-selected="false">Starters</button>
+          <button type="button" class="filter-btn" data-menu-filter="mains" role="tab" aria-selected="false">Mains</button>
+          <button type="button" class="filter-btn" data-menu-filter="pasta" role="tab" aria-selected="false">Pasta &amp; Bowls</button>
+          <button type="button" class="filter-btn" data-menu-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+          <button type="button" class="filter-btn" data-menu-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+        </div>
+
+        <!-- Complete 22 Items Menu Grid -->
+        <div class="menu-items-grid">
+          
+          <!-- STARTERS (5 items) -->
+          <div class="menu-item-row" data-menu-category="starters">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Burrata &amp; Tomato</h3>
+              <span class="menu-item-price">₹495</span>
+            </div>
+            <p class="menu-item-details">Heirloom cherry tomatoes, artisanal burrata, cold-pressed basil oil, toasted sourdough crisps.</p>
+            <span class="menu-item-tag">Starter &bull; Vegetarian</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="starters">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Crispy Lotus Stem</h3>
+              <span class="menu-item-price">₹425</span>
+            </div>
+            <p class="menu-item-details">Wok-tossed lotus chips, sweet chili tamarind reduction, toasted white sesame, fresh scallions.</p>
+            <span class="menu-item-tag">Starter &bull; Vegetarian</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="starters">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Truffle Fries</h3>
+              <span class="menu-item-price">₹395</span>
+            </div>
+            <p class="menu-item-details">Hand-cut golden russet fries, white truffle oil, shaved 24-month parmesan, rosemary sea salt.</p>
+            <span class="menu-item-tag">Starter &bull; Vegetarian</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="starters">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Chicken Tikka Skewers</h3>
+              <span class="menu-item-price">₹525</span>
+            </div>
+            <p class="menu-item-details">Boneless chicken thighs marinated in Kashmiri chili and hung curd, charcoal-roasted with mint relish.</p>
+            <span class="menu-item-tag">Starter &bull; Non-Veg</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="starters">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Charred Broccoli &amp; Almond</h3>
+              <span class="menu-item-price">₹445</span>
+            </div>
+            <p class="menu-item-details">Tandoor-charred broccoli florets, whipped feta, toasted spiced almond flakes, lemon zest.</p>
+            <span class="menu-item-tag">Starter &bull; Vegetarian</span>
+          </div>
+
+          <!-- MAINS (5 items) -->
+          <div class="menu-item-row" data-menu-category="mains">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Tandoori Salmon</h3>
+              <span class="menu-item-price">₹895</span>
+            </div>
+            <p class="menu-item-details">Charred Norwegian salmon fillet, seasonal market vegetables, roasted garlic mustard glaze.</p>
+            <span class="menu-item-tag">Main &bull; Non-Veg</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="mains">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Butter Chicken</h3>
+              <span class="menu-item-price">₹675</span>
+            </div>
+            <p class="menu-item-details">Tender roasted chicken morsels simmered in velvety San Marzano tomato gravy with kasuri methi.</p>
+            <span class="menu-item-tag">Main &bull; Non-Veg</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="mains">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Paneer Steak</h3>
+              <span class="menu-item-price">₹595</span>
+            </div>
+            <p class="menu-item-details">Pan-seared malai paneer block, rich spiced makhani reduction, buttered cumin herb pilaf.</p>
+            <span class="menu-item-tag">Main &bull; Vegetarian</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="mains">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Slow-Cooked Lamb Shank</h3>
+              <span class="menu-item-price">₹950</span>
+            </div>
+            <p class="menu-item-details">6-hour braised lamb shank in aromatic whole-spice jus, garlic mash, glazed baby carrots.</p>
+            <span class="menu-item-tag">Main &bull; Non-Veg</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="mains">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Pan-Seared Sea Bass</h3>
+              <span class="menu-item-price">₹895</span>
+            </div>
+            <p class="menu-item-details">Crispy skin sea bass, coconut ginger broth, sautéed bok choy, lemongrass oil.</p>
+            <span class="menu-item-tag">Main &bull; Non-Veg</span>
+          </div>
+
+          <!-- PASTA & BOWLS (4 items) -->
+          <div class="menu-item-row" data-menu-category="pasta">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Truffle Mushroom Pasta</h3>
+              <span class="menu-item-price">₹695</span>
+            </div>
+            <p class="menu-item-details">Handmade fettuccine, wild porcini and shiitake mushroom ragù, parmesan emulsion, white truffle essence.</p>
+            <span class="menu-item-tag">Pasta &bull; Vegetarian</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="pasta">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Arrabbiata Gnocchi</h3>
+              <span class="menu-item-price">₹625</span>
+            </div>
+            <p class="menu-item-details">Pillow-soft potato gnocchi, fiery San Marzano chili tomato sauce, fresh buffalo mozzarella, torn basil.</p>
+            <span class="menu-item-tag">Pasta &bull; Vegetarian</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="pasta">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Wild Mushroom Risotto</h3>
+              <span class="menu-item-price">₹675</span>
+            </div>
+            <p class="menu-item-details">Acquerello carnaroli rice, forest mushroom broth, thyme, mascarpone, toasted pine nuts.</p>
+            <span class="menu-item-tag">Bowls &bull; Vegetarian</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="pasta">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Spinach &amp; Ricotta Ravioli</h3>
+              <span class="menu-item-price">₹645</span>
+            </div>
+            <p class="menu-item-details">Hand-folded pasta pillows stuffed with spiced ricotta, sage brown butter sauce, crispy garlic.</p>
+            <span class="menu-item-tag">Pasta &bull; Vegetarian</span>
+          </div>
+
+          <!-- DESSERTS (5 items) -->
+          <div class="menu-item-row" data-menu-category="desserts">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Saffron Panna Cotta</h3>
+              <span class="menu-item-price">₹425</span>
+            </div>
+            <p class="menu-item-details">Silky dairy cream infused with Kashmiri saffron, seasonal macerated berries, crushed pistachio praline.</p>
+            <span class="menu-item-tag">Dessert</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="desserts">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Chocolate Tart</h3>
+              <span class="menu-item-price">₹395</span>
+            </div>
+            <p class="menu-item-details">Crisp cocoa sable crust, 70% dark Belgian chocolate silk ganache, flaked sea salt, vanilla creme.</p>
+            <span class="menu-item-tag">Dessert</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="desserts">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Gulab Jamun Cheesecake</h3>
+              <span class="menu-item-price">₹450</span>
+            </div>
+            <p class="menu-item-details">Baked cardamon cream cheese cake layered over warm gulab jamun core with rose petal dust.</p>
+            <span class="menu-item-tag">Dessert</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="desserts">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Pistachio Tiramisu</h3>
+              <span class="menu-item-price">₹475</span>
+            </div>
+            <p class="menu-item-details">Espresso-soaked savoiardi biscuits, Sicilian pistachio paste mascarpone mousse, cocoa nibs.</p>
+            <span class="menu-item-tag">Dessert</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="desserts">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Warm Spiced Fig Cake</h3>
+              <span class="menu-item-price">₹420</span>
+            </div>
+            <p class="menu-item-details">Caramelized fig sponge cake, warm jaggery butterscotch sauce, Madagascar vanilla bean gelato.</p>
+            <span class="menu-item-tag">Dessert</span>
+          </div>
+
+          <!-- DRINKS (5 items) -->
+          <div class="menu-item-row" data-menu-category="drinks">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Signature Mocktail</h3>
+              <span class="menu-item-price">₹320</span>
+            </div>
+            <p class="menu-item-details">Clarified pomegranate nectar, infused hibiscus syrup, torched rosemary, sparkling soda.</p>
+            <span class="menu-item-tag">Drinks &bull; Zero Proof</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="drinks">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Cold Coffee</h3>
+              <span class="menu-item-price">₹260</span>
+            </div>
+            <p class="menu-item-details">Chilled double shot of medium-roast arabica espresso, organic milk, subtle Madagascar vanilla.</p>
+            <span class="menu-item-tag">Drinks &bull; Coffee</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="drinks">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Iced Tea</h3>
+              <span class="menu-item-price">₹220</span>
+            </div>
+            <p class="menu-item-details">Cold-steeped Nilgiri black tea, fresh passion fruit puree, mint sprigs, citrus wheel.</p>
+            <span class="menu-item-tag">Drinks &bull; Tea</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="drinks">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Fresh Lime Soda</h3>
+              <span class="menu-item-price">₹180</span>
+            </div>
+            <p class="menu-item-details">Hand-squeezed Key limes, rock salt, raw cane sugar syrup, aerated mountain spring water.</p>
+            <span class="menu-item-tag">Drinks &bull; Refreshment</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="drinks">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Spiced Hibiscus Cooler</h3>
+              <span class="menu-item-price">₹280</span>
+            </div>
+            <p class="menu-item-details">Organic hibiscus flower brew, crushed green cardamom, cinnamon tincture, sparkling water.</p>
+            <span class="menu-item-tag">Drinks &bull; Botanical</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: RESERVATION CTA -->
+    <section class="section-padding" style="background-color: var(--color-bg-alt);" aria-label="Book a table callout">
+      <div class="container">
+        <div class="reservation-banner">
+          <span class="section-eyebrow light">TASTE THE DIFFERENCE</span>
+          <h2 class="heading-primary">Ready to dine with us?</h2>
+          <p>Book your table online or connect with our reservations team on WhatsApp.</p>
+          <div class="reservation-btn-group">
+            <button type="button" class="btn btn-primary js-open-reservation" aria-haspopup="dialog">
+              Reserve a Table
+            </button>
+            <a href="#" class="btn btn-whatsapp" data-config-whatsapp>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <p class="brand-name" data-config-text="businessName">SAVORA</p>
+          <p class="brand-sub" data-config-text="subtitle">Modern Kitchen &amp; Dining</p>
+          <p class="tagline" data-config-text="tagline">Good Food. Beautifully Served.</p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" data-config-social="instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" data-config-social="facebook" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" data-config-social="youtube" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="./menu.html">Full Menu</a></li>
+            <li><a href="#" class="js-open-reservation">Reservations</a></li>
+            <li><a href="./about.html#private-dining">Private Dining</a></li>
+            <li><a href="./about.html#events">Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Visit &amp; Hours</p>
+          <div class="footer-contact-info">
+            <p data-config-text="address">18 Heritage Lane</p>
+            <p data-config-text="city">New Delhi, India</p>
+            <p><a href="tel:+919876543210" data-config-phone="sync">+91 98765 43210</a></p>
+            <p><a href="mailto:hello@savora.example" data-config-email="sync">hello@savora.example</a></p>
+            <div style="margin-top: 0.5rem; font-size: 0.8125rem;">
+              <p><strong>Mon–Thu:</strong> 12:00 PM – 10:30 PM</p>
+              <p><strong>Fri–Sat:</strong> 12:00 PM – 11:30 PM</p>
+              <p><strong>Sunday:</strong> 12:00 PM – 10:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-current-year>2026</span> <span data-config-text="businessName">SAVORA</span>. All Rights Reserved.</p>
+        <p style="font-size: 0.8125rem; opacity: 0.7;">Modern Kitchen &amp; Dining Commercial Template</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESERVATION MODAL -->
+  <div class="modal-backdrop" id="reservationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" aria-label="Close reservation modal">&times;</button>
+      <div class="modal-header">
+        <span class="section-eyebrow">TABLE RESERVATION</span>
+        <h3 id="modalTitle">Request a Table</h3>
+        <p>Please select your preferred date, time and guest count.</p>
+      </div>
+
+      <div id="reservationFeedback" class="form-feedback-alert" role="status" aria-live="polite"></div>
+
+      <form id="reservationForm" novalidate>
+        <div class="form-group">
+          <label for="resName" class="form-label">Full Name <span class="req">*</span></label>
+          <input type="text" id="resName" class="form-control" placeholder="e.g. Aarav Sharma" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resPhone" class="form-label">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="resPhone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label for="resEmail" class="form-label">Email Address <span class="req">*</span></label>
+            <input type="email" id="resEmail" class="form-control" placeholder="aarav@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resDate" class="form-label">Date <span class="req">*</span></label>
+            <input type="date" id="resDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="resTime" class="form-label">Time <span class="req">*</span></label>
+            <select id="resTime" class="form-control" required>
+              <option value="" disabled selected>Select time slot</option>
+              <option value="12:00 PM">12:00 PM (Lunch)</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="01:00 PM">01:00 PM</option>
+              <option value="01:30 PM">01:30 PM</option>
+              <option value="02:00 PM">02:00 PM</option>
+              <option value="07:00 PM">07:00 PM (Dinner)</option>
+              <option value="07:30 PM">07:30 PM</option>
+              <option value="08:00 PM">08:00 PM</option>
+              <option value="08:30 PM">08:30 PM</option>
+              <option value="09:00 PM">09:00 PM</option>
+              <option value="09:30 PM">09:30 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="resGuests" class="form-label">Number of Guests <span class="req">*</span></label>
+          <select id="resGuests" class="form-control" required>
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="7">7 Guests</option>
+            <option value="8+">8+ Guests (Private dining enquiry)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="resSpecial" class="form-label">Special Requests (Optional)</label>
+          <textarea id="resSpecial" class="form-control" rows="2" placeholder="Dietary preferences, seating preference, celebration notes..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+          Submit Reservation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/config.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

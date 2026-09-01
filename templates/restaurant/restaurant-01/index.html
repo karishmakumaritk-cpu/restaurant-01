@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAVORA — Modern Kitchen & Dining | Good Food. Beautifully Served.</title>
+  <meta name="description" content="SAVORA brings together thoughtful cooking, seasonal inspiration and genuine hospitality in a relaxed modern dining setting. Reserve your table today.">
+  <link rel="canonical" href="./index.html">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="SAVORA — Modern Kitchen & Dining">
+  <meta property="og:description" content="Good Food. Beautifully Served. A modern culinary destination for memorable dining.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:url" content="./index.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Schema.org JSON-LD (Restaurant) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "SAVORA",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+    "description": "Modern Kitchen & Dining. Good Food. Beautifully Served.",
+    "servesCuisine": ["Modern Indian", "Contemporary Dining", "Bistro"],
+    "priceRange": "₹₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "18 Heritage Lane",
+      "addressLocality": "New Delhi",
+      "postalCode": "110001",
+      "addressCountry": "IN"
+    },
+    "telephone": "+919876543210",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "12:00",
+        "closes": "22:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "12:00",
+        "closes": "23:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "12:00",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="./index.html" class="brand-logo" aria-label="SAVORA Homepage">
+        <span class="brand-name" data-config-text="businessName">SAVORA</span>
+        <span class="brand-sub" data-config-text="subtitle">Modern Kitchen & Dining</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="./index.html" class="nav-link active" aria-current="page">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./menu.html" class="nav-link">Menu</a>
+        <a href="./gallery.html" class="nav-link">Gallery</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary js-open-reservation" aria-haspopup="dialog" aria-controls="reservationModal">
+          Reserve a Table
+        </button>
+        <button type="button" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./menu.html">Menu</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <button type="button" class="btn btn-primary js-open-reservation" style="width: 100%;">
+        Reserve a Table
+      </button>
+      <a href="#" class="btn btn-whatsapp" data-config-whatsapp style="width: 100%;">
+        WhatsApp Us
+      </a>
+      <p style="font-size: 0.875rem; color: var(--color-text-secondary); text-align: center; margin-top: 0.5rem;" data-config-text="phone">
+        +91 98765 43210
+      </p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-home" aria-label="Hero Introduction">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-eyebrow">MODERN KITCHEN &amp; DINING</span>
+          <h1 class="heading-display hero-title">
+            Good food.<br>Beautifully served.
+          </h1>
+          <p class="lead-text hero-description">
+            Thoughtful dishes, warm hospitality and an inviting dining room made for memorable meals.
+          </p>
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-primary js-open-reservation" aria-haspopup="dialog">
+              Reserve a Table
+            </button>
+            <a href="./menu.html" class="btn btn-secondary">
+              Explore Menu
+            </a>
+          </div>
+          <div class="hero-credibility">
+            <div class="credibility-item">
+              <span class="credibility-dot"></span>
+              <span>Fresh Ingredients</span>
+            </div>
+            <div class="credibility-item">
+              <span class="credibility-dot"></span>
+              <span>Crafted Daily</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-frame">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80" 
+                 alt="Artfully plated gourmet dishes on dining table at SAVORA" 
+                 width="800" 
+                 height="1000" 
+                 loading="eager" 
+                 fetchpriority="high">
+          </div>
+          <div class="hero-floating-card">
+            <p class="card-title">Signature Dining</p>
+            <p class="card-subtitle">Curated seasonal flavors &amp; ambient comfort</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: OUR STORY / INTRODUCTION -->
+    <section class="section-padding" aria-label="About SAVORA Introduction">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="editorial-image-frame">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" 
+                 alt="Warm ambient dining room interior at SAVORA with wooden tables and gentle lighting" 
+                 width="900" 
+                 height="675" 
+                 loading="lazy">
+          </div>
+          <div class="editorial-content">
+            <span class="section-eyebrow">OUR STORY</span>
+            <h2 class="heading-primary">A table worth gathering around.</h2>
+            <p class="lead-text">
+              SAVORA brings together thoughtful cooking, seasonal inspiration and genuine hospitality in a relaxed modern setting.
+            </p>
+            <p>
+              Born from a reverence for honest ingredients, our culinary philosophy centers on balancing traditional culinary depth with contemporary elegance. Whether joining us for a mid-week lunch or an evening celebration, every detail is crafted to make you feel at home.
+            </p>
+            <a href="./about.html" class="link-arrow">
+              Discover Our Story &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FEATURED DISHES -->
+    <section class="section-padding" style="background-color: var(--color-bg-alt);" aria-label="Featured Dishes">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">FROM THE KITCHEN</span>
+          <h2 class="heading-primary">A few favorites.</h2>
+          <p class="text-muted">A glimpse into our chef's signature seasonal offerings.</p>
+        </div>
+
+        <div class="dishes-grid">
+          <!-- Item 1 -->
+          <article class="dish-card">
+            <div class="dish-card-image">
+              <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb2250d?auto=format&fit=crop&w=700&q=80" 
+                   alt="Charred Burrata with roasted tomatoes and basil oil" 
+                   width="600" 
+                   height="412" 
+                   loading="lazy">
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-card-header">
+                <h3 class="dish-card-title">Charred Burrata</h3>
+                <span class="dish-card-price">₹495</span>
+              </div>
+              <p class="dish-card-desc">Roasted tomatoes, basil oil and toasted sourdough.</p>
+              <div class="dish-card-footer">
+                <span class="badge badge-terracotta">Starter</span>
+                <a href="./menu.html" class="link-arrow">View Menu &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="dish-card">
+            <div class="dish-card-image">
+              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80" 
+                   alt="Truffle Mushroom Pasta with wild mushrooms and herbs" 
+                   width="600" 
+                   height="412" 
+                   loading="lazy">
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-card-header">
+                <h3 class="dish-card-title">Truffle Mushroom Pasta</h3>
+                <span class="dish-card-price">₹695</span>
+              </div>
+              <p class="dish-card-desc">Creamy wild mushroom pasta with parmesan and herbs.</p>
+              <div class="dish-card-footer">
+                <span class="badge badge-terracotta">Pasta</span>
+                <a href="./menu.html" class="link-arrow">View Menu &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="dish-card">
+            <div class="dish-card-image">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=80" 
+                   alt="Tandoori Salmon with seasonal vegetables and spice glaze" 
+                   width="600" 
+                   height="412" 
+                   loading="lazy">
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-card-header">
+                <h3 class="dish-card-title">Tandoori Salmon</h3>
+                <span class="dish-card-price">₹895</span>
+              </div>
+              <p class="dish-card-desc">Charred salmon, seasonal vegetables and house spice glaze.</p>
+              <div class="dish-card-footer">
+                <span class="badge badge-terracotta">Main</span>
+                <a href="./menu.html" class="link-arrow">View Menu &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="dish-card">
+            <div class="dish-card-image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" 
+                   alt="Saffron Panna Cotta with seasonal fruits and pistachio" 
+                   width="600" 
+                   height="412" 
+                   loading="lazy">
+            </div>
+            <div class="dish-card-body">
+              <div class="dish-card-header">
+                <h3 class="dish-card-title">Saffron Panna Cotta</h3>
+                <span class="dish-card-price">₹425</span>
+              </div>
+              <p class="dish-card-desc">Silky panna cotta with seasonal fruit and pistachio.</p>
+              <div class="dish-card-footer">
+                <span class="badge badge-terracotta">Dessert</span>
+                <a href="./menu.html" class="link-arrow">View Menu &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: MENU PREVIEW WITH TABS -->
+    <section class="section-padding" aria-label="Menu Preview">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">OUR SELECTIONS</span>
+          <h2 class="heading-primary">Explore the Menu</h2>
+          <p class="text-muted">Filtered by course for your dining pleasure.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-nav" role="tablist" aria-label="Menu category filters">
+          <button type="button" class="filter-btn active" data-menu-filter="all" role="tab" aria-selected="true">All</button>
+          <button type="button" class="filter-btn" data-menu-filter="starters" role="tab" aria-selected="false">Starters</button>
+          <button type="button" class="filter-btn" data-menu-filter="mains" role="tab" aria-selected="false">Mains</button>
+          <button type="button" class="filter-btn" data-menu-filter="pasta" role="tab" aria-selected="false">Pasta</button>
+          <button type="button" class="filter-btn" data-menu-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+          <button type="button" class="filter-btn" data-menu-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+        </div>
+
+        <!-- Menu Preview Grid (12 Items) -->
+        <div class="menu-items-grid">
+          <!-- Starters -->
+          <div class="menu-item-row" data-menu-category="starters">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Burrata &amp; Tomato</h3>
+              <span class="menu-item-price">₹495</span>
+            </div>
+            <p class="menu-item-details">Heirloom tomatoes, fresh burrata, cold-pressed olive oil, sourdough crisps.</p>
+            <span class="menu-item-tag">Starter</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="starters">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Crispy Lotus Stem</h3>
+              <span class="menu-item-price">₹425</span>
+            </div>
+            <p class="menu-item-details">Honey chili glaze, toasted sesame seeds and fresh scallions.</p>
+            <span class="menu-item-tag">Starter</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="starters">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Chicken Tikka Skewers</h3>
+              <span class="menu-item-price">₹525</span>
+            </div>
+            <p class="menu-item-details">Charcoal-grilled tender chicken with smoked pepper mint chutney.</p>
+            <span class="menu-item-tag">Starter</span>
+          </div>
+
+          <!-- Mains -->
+          <div class="menu-item-row" data-menu-category="mains">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Tandoori Salmon</h3>
+              <span class="menu-item-price">₹895</span>
+            </div>
+            <p class="menu-item-details">Charred salmon fillet, seasonal steamed greens, house spiced glaze.</p>
+            <span class="menu-item-tag">Main</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="mains">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Butter Chicken</h3>
+              <span class="menu-item-price">₹675</span>
+            </div>
+            <p class="menu-item-details">Slow-simmered rich tomato gravy, kasuri methi, smoked butter.</p>
+            <span class="menu-item-tag">Main</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="mains">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Paneer Steak</h3>
+              <span class="menu-item-price">₹595</span>
+            </div>
+            <p class="menu-item-details">Seared artisanal cottage cheese, velvety makhani sauce, herbed pilaf.</p>
+            <span class="menu-item-tag">Main</span>
+          </div>
+
+          <!-- Pasta -->
+          <div class="menu-item-row" data-menu-category="pasta">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Truffle Mushroom Pasta</h3>
+              <span class="menu-item-price">₹695</span>
+            </div>
+            <p class="menu-item-details">Handmade fettuccine, porcini reduction, parmesan shavings, black truffle oil.</p>
+            <span class="menu-item-tag">Pasta</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="pasta">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Arrabbiata Gnocchi</h3>
+              <span class="menu-item-price">₹625</span>
+            </div>
+            <p class="menu-item-details">Pan-seared potato gnocchi in spicy San Marzano tomato sauce and fresh basil.</p>
+            <span class="menu-item-tag">Pasta</span>
+          </div>
+
+          <!-- Desserts -->
+          <div class="menu-item-row" data-menu-category="desserts">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Saffron Panna Cotta</h3>
+              <span class="menu-item-price">₹425</span>
+            </div>
+            <p class="menu-item-details">Infused with Kashmiri saffron, seasonal berries and crushed roasted pistachio.</p>
+            <span class="menu-item-tag">Dessert</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="desserts">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Chocolate Tart</h3>
+              <span class="menu-item-price">₹395</span>
+            </div>
+            <p class="menu-item-details">70% dark Belgian chocolate ganache, sea salt flake, vanilla bean cream.</p>
+            <span class="menu-item-tag">Dessert</span>
+          </div>
+
+          <!-- Drinks -->
+          <div class="menu-item-row" data-menu-category="drinks">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Signature Mocktail</h3>
+              <span class="menu-item-price">₹320</span>
+            </div>
+            <p class="menu-item-details">Clarified pomegranate, hibiscus cordial, rosemary smoke, crushed ice.</p>
+            <span class="menu-item-tag">Drinks</span>
+          </div>
+
+          <div class="menu-item-row" data-menu-category="drinks">
+            <div class="menu-item-top">
+              <h3 class="menu-item-name">Cold Coffee</h3>
+              <span class="menu-item-price">₹260</span>
+            </div>
+            <p class="menu-item-details">Double shot single-origin espresso shaken with textured organic milk.</p>
+            <span class="menu-item-tag">Drinks</span>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="./menu.html" class="btn btn-dark">
+            View Complete Menu &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SIGNATURE EXPERIENCE -->
+    <section class="section-padding signature-banner" aria-label="Dining Experience">
+      <div class="container">
+        <div class="signature-grid">
+          <div class="signature-content">
+            <span class="section-eyebrow light">THE SAVORA EXPERIENCE</span>
+            <h2 class="heading-primary">Made for long lunches and late dinners.</h2>
+            <p>
+              From intimate dinners to celebrations with friends, SAVORA is designed around the moments that bring people together.
+            </p>
+            <button type="button" class="btn btn-primary js-open-reservation" aria-haspopup="dialog">
+              Reserve Your Table
+            </button>
+          </div>
+          <div class="signature-image-frame">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" 
+                 alt="Warm ambient evening dinner table with glassware and cozy lighting" 
+                 width="900" 
+                 height="560" 
+                 loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: RESTAURANT FEATURES (4 Features) -->
+    <section class="section-padding" aria-label="Restaurant Highlights">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">OUR COMMITMENT</span>
+          <h2 class="heading-primary">Thoughtful Hospitality</h2>
+          <p class="text-muted">What makes dining with us distinct.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="feature-title">Freshly Prepared</h3>
+            <p class="feature-desc">Every dish is crafted daily in our kitchen using quality regional ingredients and made-to-order preparation.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+            </div>
+            <h3 class="feature-title">Thoughtful Menus</h3>
+            <p class="feature-desc">Carefully balanced selections combining traditional depth with modern plating and vibrant seasonal flavors.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="feature-title">Warm Hospitality</h3>
+            <p class="feature-desc">Attentive, gracious service tailored to ensure you and your guests enjoy a relaxed and memorable time.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3 class="feature-title">Private Dining</h3>
+            <p class="feature-desc">Dedicated seating areas and personalized tasting menus ideal for birthdays, anniversaries, and business gatherings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: MEET THE CHEF -->
+    <!-- DEMO TEAM CONTENT — REPLACE BEFORE CLIENT DELIVERY -->
+    <section class="section-padding chef-section" aria-label="Executive Chef">
+      <div class="container">
+        <div class="chef-grid">
+          <div class="chef-image-frame">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" 
+                 alt="Chef Arjun Mehta preparing artisanal dishes in the SAVORA kitchen" 
+                 width="800" 
+                 height="1000" 
+                 loading="lazy">
+          </div>
+          <div>
+            <span class="section-eyebrow">MEET THE CHEF</span>
+            <h2 class="heading-primary" style="margin-bottom: 0.5rem;">Craft behind every plate.</h2>
+            <h3 class="chef-name">Chef Arjun Mehta</h3>
+            <p class="chef-role">Executive Chef</p>
+            <p class="chef-bio">
+              With a passion for modern comfort food and thoughtful presentation, Chef Arjun leads the kitchen with a focus on flavor, balance and hospitality.
+            </p>
+            <blockquote class="chef-quote">
+              &ldquo;Great dining is about sincerity in the kitchen and warmth at the table.&rdquo;
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CUSTOMER REVIEWS -->
+    <!-- DEMO REVIEWS — REPLACE WITH REAL CUSTOMER REVIEWS -->
+    <section class="section-padding" aria-label="Guest Testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">TESTIMONIALS</span>
+          <h2 class="heading-primary">What guests are saying</h2>
+          <p class="text-muted">Real impressions from our community of dining patrons.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="review-text">
+              &ldquo;The Truffle Mushroom Pasta was exceptional, and the atmosphere strikes the ideal balance between refined and relaxed. A gem for weekend dinners.&rdquo;
+            </p>
+            <div class="review-author">
+              <div class="author-avatar">AS</div>
+              <div>
+                <p class="author-name">Aarav Sharma</p>
+                <p class="author-tag">Dinner Guest</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="review-text">
+              &ldquo;From the greeting at the door to the Saffron Panna Cotta, everything was seamless. SAVORA has quickly become our favorite place to host out-of-town friends.&rdquo;
+            </p>
+            <div class="review-author">
+              <div class="author-avatar">NK</div>
+              <div>
+                <p class="author-name">Nisha Kapoor</p>
+                <p class="author-tag">Family Celebration</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="review-text">
+              &ldquo;Incredible depth of flavor in the Tandoori Salmon. Attentive staff who understand timing and pacing. Truly good food, beautifully served.&rdquo;
+            </p>
+            <div class="review-author">
+              <div class="author-avatar">RM</div>
+              <div>
+                <p class="author-name">Rohan Mehta</p>
+                <p class="author-tag">Regular Patron</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SOCIAL GRID -->
+    <!-- REPLACE WITH ACTUAL SOCIAL URL -->
+    <section class="section-padding" style="background-color: var(--color-bg-alt);" aria-label="Social Feed">
+      <div class="container">
+        <div class="social-section-header">
+          <span class="section-eyebrow">JOIN OUR COMMUNITY</span>
+          <h2 class="heading-primary">Follow the table.</h2>
+          <a href="#" class="social-handle" data-config-social="instagram" data-config-text="socialHandle">@savoradining</a>
+        </div>
+
+        <div class="social-tiles-grid">
+          <a href="#" class="social-tile" data-config-social="instagram" aria-label="Instagram post: signature appetizers">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=500&q=80" alt="Fresh artisan salad on plate" width="400" height="400" loading="lazy">
+            <div class="social-tile-overlay"><span>Instagram</span></div>
+          </a>
+          <a href="#" class="social-tile" data-config-social="instagram" aria-label="Instagram post: chef in kitchen">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=500&q=80" alt="Plating gourmet meal" width="400" height="400" loading="lazy">
+            <div class="social-tile-overlay"><span>Instagram</span></div>
+          </a>
+          <a href="#" class="social-tile" data-config-social="instagram" aria-label="Instagram post: crafted mocktail">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=500&q=80" alt="Crafted cocktail in glassware" width="400" height="400" loading="lazy">
+            <div class="social-tile-overlay"><span>Instagram</span></div>
+          </a>
+          <a href="#" class="social-tile" data-config-social="instagram" aria-label="Instagram post: restaurant interior candle night">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=500&q=80" alt="Warm table candles at SAVORA" width="400" height="400" loading="lazy">
+            <div class="social-tile-overlay"><span>Instagram</span></div>
+          </a>
+          <a href="#" class="social-tile" data-config-social="instagram" aria-label="Instagram post: artisan pasta dish">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=500&q=80" alt="Handmade pasta dish" width="400" height="400" loading="lazy">
+            <div class="social-tile-overlay"><span>Instagram</span></div>
+          </a>
+          <a href="#" class="social-tile" data-config-social="instagram" aria-label="Instagram post: chocolate dessert">
+            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=500&q=80" alt="Decadent dessert plating" width="400" height="400" loading="lazy">
+            <div class="social-tile-overlay"><span>Instagram</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: RESERVATION CTA -->
+    <section class="section-padding" aria-label="Reservation Call to Action">
+      <div class="container">
+        <div class="reservation-banner">
+          <span class="section-eyebrow light">TABLE BOOKINGS</span>
+          <h2 class="heading-primary">Your table is waiting.</h2>
+          <p>Choose your preferred date and time and send us a reservation request.</p>
+          <div class="reservation-btn-group">
+            <button type="button" class="btn btn-primary js-open-reservation" aria-haspopup="dialog">
+              Reserve a Table
+            </button>
+            <a href="#" class="btn btn-whatsapp" data-config-whatsapp>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Col -->
+        <div class="footer-brand">
+          <p class="brand-name" data-config-text="businessName">SAVORA</p>
+          <p class="brand-sub" data-config-text="subtitle">Modern Kitchen &amp; Dining</p>
+          <p class="tagline" data-config-text="tagline">Good Food. Beautifully Served.</p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" data-config-social="instagram" aria-label="SAVORA Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" data-config-social="facebook" aria-label="SAVORA Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" data-config-social="youtube" aria-label="SAVORA YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <p class="footer-col-title">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Explore -->
+        <div>
+          <p class="footer-col-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="./menu.html">Full Menu</a></li>
+            <li><a href="#" class="js-open-reservation">Reservations</a></li>
+            <li><a href="./about.html#private-dining">Private Dining</a></li>
+            <li><a href="./about.html#events">Events</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Hours -->
+        <div>
+          <p class="footer-col-title">Visit &amp; Hours</p>
+          <div class="footer-contact-info">
+            <p data-config-text="address">18 Heritage Lane</p>
+            <p data-config-text="city">New Delhi, India</p>
+            <p><a href="tel:+919876543210" data-config-phone="sync">+91 98765 43210</a></p>
+            <p><a href="mailto:hello@savora.example" data-config-email="sync">hello@savora.example</a></p>
+            <div style="margin-top: 0.5rem; font-size: 0.8125rem;">
+              <p><strong>Mon–Thu:</strong> 12:00 PM – 10:30 PM</p>
+              <p><strong>Fri–Sat:</strong> 12:00 PM – 11:30 PM</p>
+              <p><strong>Sunday:</strong> 12:00 PM – 10:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-current-year>2026</span> <span data-config-text="businessName">SAVORA</span>. All Rights Reserved.</p>
+        <p style="font-size: 0.8125rem; opacity: 0.7;">Modern Kitchen &amp; Dining Commercial Template</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESERVATION MODAL (Accessible Dialog) -->
+  <div class="modal-backdrop" id="reservationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" aria-label="Close reservation modal">&times;</button>
+      <div class="modal-header">
+        <span class="section-eyebrow">TABLE RESERVATION</span>
+        <h3 id="modalTitle">Request a Table</h3>
+        <p>Please select your preferred date, time and guest count.</p>
+      </div>
+
+      <div id="reservationFeedback" class="form-feedback-alert" role="status" aria-live="polite"></div>
+
+      <form id="reservationForm" novalidate>
+        <div class="form-group">
+          <label for="resName" class="form-label">Full Name <span class="req">*</span></label>
+          <input type="text" id="resName" class="form-control" placeholder="e.g. Aarav Sharma" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resPhone" class="form-label">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="resPhone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label for="resEmail" class="form-label">Email Address <span class="req">*</span></label>
+            <input type="email" id="resEmail" class="form-control" placeholder="aarav@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resDate" class="form-label">Date <span class="req">*</span></label>
+            <input type="date" id="resDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="resTime" class="form-label">Time <span class="req">*</span></label>
+            <select id="resTime" class="form-control" required>
+              <option value="" disabled selected>Select time slot</option>
+              <option value="12:00 PM">12:00 PM (Lunch)</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="01:00 PM">01:00 PM</option>
+              <option value="01:30 PM">01:30 PM</option>
+              <option value="02:00 PM">02:00 PM</option>
+              <option value="07:00 PM">07:00 PM (Dinner)</option>
+              <option value="07:30 PM">07:30 PM</option>
+              <option value="08:00 PM">08:00 PM</option>
+              <option value="08:30 PM">08:30 PM</option>
+              <option value="09:00 PM">09:00 PM</option>
+              <option value="09:30 PM">09:30 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="resGuests" class="form-label">Number of Guests <span class="req">*</span></label>
+          <select id="resGuests" class="form-control" required>
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="7">7 Guests</option>
+            <option value="8+">8+ Guests (Private dining enquiry)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="resSpecial" class="form-label">Special Requests (Optional)</label>
+          <textarea id="resSpecial" class="form-control" rows="2" placeholder="Dietary preferences, seating preference, celebration notes..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+          Submit Reservation Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/config.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
